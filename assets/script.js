@@ -20,7 +20,7 @@ const displayPark = (parkData) => {
     document.getElementById('park-image').setAttribute("src", parkData.data[0].images[0].url);
     document.getElementById('park-coordinates').innerHTML = parkData.data[0].latLong;
     document.getElementById('park-activities').innerHTML = parkData.data[0].activities[0].name;
-    document.getElementById('park-links').innerHTML = parkData.data[0].url;
+    document.getElementById('park-links').setAttribute("href", parkData.data[0].url);
 }
 
 getApiData();
