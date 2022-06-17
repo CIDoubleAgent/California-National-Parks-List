@@ -1,0 +1,47 @@
+header {
+  background-color: rgb(179, 79, 182);
+}
+
+#page-title {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardBody {
+  color: rgb(77, 47, 6);
+  background-color: rgb(85, 182, 158);
+  max-width: 20%;
+  margin-left: 2%;
+  padding: 2%;
+}
+
+#park-image {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3,
+#park-coordinates,
+#park-activities {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+}/*# sourceMappingURL=style.css.map */
