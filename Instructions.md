@@ -32,7 +32,15 @@ The footer consists of four sections:
 1. Copyright year
 2. Legal links (Privacy Policy, Term and Conditions)
 3. Page title
-4. Social links
-You can have the links point to wherever you want. The sections should be laid out on wide
+4. Social links<br>
+
+You can have the links point to wherever you want.<br>
+The sections should be laid out on wide
 viewports with the legal links on the left with copyright year just below them, page title centered at
-the top, and social links right aligned on the right side.
+the top, and social links right aligned on the right side.<br>
+On narrow viewports everything should be centered and stacked from top to bottom: page title, legal
+links, social links, copyright year.
+## Deliverables
+When you've completed the project, push all files to a GitHub repository and send us a link.
+Have fun! These are the elements we'd like to see. However, feel free to add additional features you
+feel would demonstrate your skills and set you apart.
