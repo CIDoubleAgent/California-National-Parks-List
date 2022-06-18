@@ -1,9 +1,11 @@
+@import "./variables";
+
 body {
-    background-image: url("https://github.com/CIDoubleAgent/California-National-Parks-List/blob/main/assets/images/background-bigsky.jpg?raw=true");
+    background-image: $heroBgImage;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
-    position: relative;
 }
 
 section {
@@ -13,7 +15,17 @@ section {
 }
 
 #page-title {
-    min-width: 100%;
+    color: $titleTextColor;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: 50%;
+    margin-right: 50%;
+    min-width: 775px;
+    background-color: $titleBgColor;
+    font-size: 3rem;
+    border: solid;
+    border-radius: 10px;
+    border-color: $borderColor;
 }
 
 section {

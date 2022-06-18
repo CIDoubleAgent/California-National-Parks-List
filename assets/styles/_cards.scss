@@ -4,12 +4,15 @@
     color: $cardTextColor;
     background-color: $cardColor;
     max-width: 20%;
-    margin-left: 2%;
     margin-bottom: 28px;
     padding-right: 30px;
     padding-bottom: 25px;
     padding-left: 30px;
     border-radius: 10px;
+}
+
+#park-description {
+    margin-bottom: 30px;
 }
 
 #park-image {
@@ -25,13 +28,14 @@ h3,
     text-align: center;
 }
 
-a {
-    text-decoration:none;
-    text-align: center;
-    color: $linkColor;
-}
-
 li {
     list-style: none;
     text-align: center;
+}
+
+#park-links {
+    text-decoration:none;
+    text-align: center;
+    font-size: 1.125rem;
+    color: $linkColor;
 }

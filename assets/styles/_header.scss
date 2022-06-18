@@ -3,9 +3,11 @@
 header {
     background-color: $headerBgColor;
     color: $headerTextColor;
+    display: flex;
+    justify-content: center;
 }
 
-#page-title {
-    text-align: center;
-    padding-bottom: 35px;
+#header-image {
+    max-height: 8rem;
+    margin-top: 1rem;
 }
