@@ -6,4 +6,29 @@ footer {
     padding-left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#legal-links {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    text-align: center;
+}
+
+#legal-link {
+    margin: 15px;
+}
+
+#social-links {
+    display: flex;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#icon {
+    font-size: 50px;
+    margin: 10px;
 }

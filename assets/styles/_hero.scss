@@ -5,7 +5,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+main {
+    z-index: 1;
+    position: relative;
 }
 
 section {
@@ -21,11 +34,7 @@ section {
     margin-left: 50%;
     margin-right: 50%;
     min-width: 775px;
-    background-color: $titleBgColor;
-    font-size: 3rem;
-    border: solid;
-    border-radius: 10px;
-    border-color: $borderColor;
+    font-size: 4rem;
 }
 
 section {
