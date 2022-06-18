@@ -31,17 +31,10 @@ a {
 #social-links {
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
-    // margin-top: 30px;
+    padding-right: 80px;
 }
 
 #icon {
     font-size: 40px;
     margin: 10px;
-}
-
-@media (max-width: 373px) {
-    #icon {
-        font-size: 1.5rem;
-    }
 }
