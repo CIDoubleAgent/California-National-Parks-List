@@ -8,8 +8,13 @@ footer {
     padding-bottom: 1px;
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 #legal-links {
@@ -25,12 +30,13 @@ footer {
 
 #social-links {
     display: flex;
-    padding: 30px;
-    margin-top: 30px;
+    flex-direction: column;
+    padding-right: 50px;
+    // margin-top: 30px;
 }
 
 #icon {
-    font-size: 50px;
+    font-size: 40px;
     margin: 10px;
 }
 
