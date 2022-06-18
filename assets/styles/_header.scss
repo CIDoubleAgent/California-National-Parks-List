@@ -2,4 +2,10 @@
 
 header {
     background-color: $headerBgColor;
+    color: $headerTextColor;
+}
+
+#page-title {
+    text-align: center;
+    padding-bottom: 35px;
 }

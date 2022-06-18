@@ -1,8 +1,23 @@
+body {
+    background-image: url("https://github.com/CIDoubleAgent/California-National-Parks-List/blob/main/assets/images/background-bigsky.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #page-title {
-    text-align: center;
+    min-width: 100%;
 }
 
 section {
     display: flex;
     flex-direction: row;
 }
+

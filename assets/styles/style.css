@@ -1,9 +1,29 @@
 header {
-  background-color: rgb(179, 79, 182);
+  background-color: rgb(34, 75, 65);
+  color: #fff;
 }
 
 #page-title {
   text-align: center;
+  padding-bottom: 35px;
+}
+
+body {
+  background-image: url("https://github.com/CIDoubleAgent/California-National-Parks-List/blob/main/assets/images/background-bigsky.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#page-title {
+  min-width: 100%;
 }
 
 section {
@@ -12,16 +32,21 @@ section {
 }
 
 .cardBody {
-  color: rgb(77, 47, 6);
-  background-color: rgb(85, 182, 158);
+  color: rgb(34, 75, 65);
+  background-color: rgb(217, 217, 217);
   max-width: 20%;
   margin-left: 2%;
-  padding: 2%;
+  margin-bottom: 28px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  border-radius: 10px;
 }
 
 #park-image {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 h2,
@@ -34,11 +59,24 @@ h3,
 a {
   text-decoration: none;
   text-align: center;
+  color: darkorange;
 }
 
 li {
   list-style: none;
   text-align: center;
+}
+
+footer {
+  background-color: rgb(34, 75, 65);
+  color: #fff;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 body {
