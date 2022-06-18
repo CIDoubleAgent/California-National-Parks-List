@@ -30,11 +30,10 @@ section {
 #page-title {
     color: $titleTextColor;
     text-align: center;
-    padding-bottom: 5px;
-    margin-left: 50%;
-    margin-right: 50%;
-    min-width: 775px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 4rem;
+    font-family: 'Heebo', sans-serif;
 }
 
 section {
@@ -42,3 +41,14 @@ section {
     flex-direction: row;
 }
 
+@media (max-width: 778px) {
+    #page-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 373px) {
+    #page-title {
+        font-size: 2rem;
+    }
+}
