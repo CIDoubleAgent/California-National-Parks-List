@@ -31,14 +31,17 @@ const displayPark = (parkData) => {
         parkName.innerHTML = name;
         parkDescription.innerHTML = description;
         coordinates.innerHTML = latLong;
-        parkLink.innerHTML = "NPS Link";
+        activitiesDiv.innerHTML = "Activities";
+        parkLink.innerHTML = "Website";
 
         parkImage.src = images[0].url;
         parkLink.href = url;
 
         cardBody.classList.add("cardBody");
         parkImage.classList.add("park-image");
-
+        activitiesDiv.classList.add("activity");
+        coordinates.classList.add("park-coordinates");
+        parkLink.classList.add("park-links");
         activities.forEach((activity, i) => {
             if (i<=2) {const p = document.createElement("p");
                 p.innerHTML = activity.name;
