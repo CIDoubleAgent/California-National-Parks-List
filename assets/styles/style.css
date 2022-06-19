@@ -131,6 +131,7 @@ footer {
   display: flex;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 
 a {
@@ -138,10 +139,13 @@ a {
   text-decoration: none;
 }
 
+.footer-title {
+  width: 100%;
+  text-align: center;
+}
+
 #legal-links {
   display: flex;
-  flex-direction: column;
-  width: 200px;
   text-align: center;
 }
 
@@ -151,7 +155,6 @@ a {
 
 #social-links {
   display: flex;
-  flex-direction: column;
   width: 200px;
 }
 
@@ -160,6 +163,30 @@ a {
   margin: 10px;
 }
 
+#copy {
+  width: 100%;
+  padding-left: 170px;
+}
+
+@media (max-width: 615px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #legal-links,
+#social-links {
+    width: 100%;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    flex-direction: column;
+  }
+
+  #copy {
+    padding-left: 0px;
+  }
+}
 body {
   padding: 0%;
   margin: 0%;
