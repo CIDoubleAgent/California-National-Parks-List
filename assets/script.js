@@ -8,16 +8,16 @@ const getApiData = () => {
             throw new Error("NETWORK RESPONSE ERROR");
         }
     }).then(parkData => {
-        console.log(parkData);
+        // console.log(parkData);
         displayPark(parkData);
     }).catch((error) => console.error("FETCH ERROR:", error));
 }
 
 const displayPark = (parkData) => {
-    console.log(parkData);
+    // console.log(parkData);
     const cardsContainer = document.querySelector(".cards-container");
     parkData.data.forEach(park => {
-        console.log(park);
+        // console.log(park);
         const {activities, description, images, name, latLong, url} = park;
         const cardBody = document.createElement("article");
         const parkName = document.createElement("h2");
@@ -31,8 +31,8 @@ const displayPark = (parkData) => {
         parkName.innerHTML = name;
         parkDescription.innerHTML = description;
         coordinates.innerHTML = latLong;
-        activitiesDiv.innerHTML = "Activities";
-        parkLink.innerHTML = "Website";
+        activitiesDiv.innerHTML = "Activities at this park include:";
+        parkLink.innerHTML = "Park Website";
 
         parkImage.src = images[0].url;
         parkLink.href = url;
