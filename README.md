@@ -32,4 +32,4 @@ https://cidoubleagent.github.io/California-National-Parks-List/
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Questions
 * GitHub username: [CIDoubleAgent](https://github.com/CIDoubleAgent)
-* Contact email: nzabkar51@gmail.com
+* Contact email: nickz51dev@gmail.com
