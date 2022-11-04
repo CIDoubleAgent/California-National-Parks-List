@@ -29,13 +29,15 @@ section {
     justify-content: space-around;
 }
 
-#page-title {
+.page-title {
     color: $lightTextColor;
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 4rem;
     font-family: 'Heebo', sans-serif;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 
+    1px -1px 0 #000, -1px -1px 0 #000;
 }
 
 section {

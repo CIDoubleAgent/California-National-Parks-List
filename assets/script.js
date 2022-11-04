@@ -8,17 +8,15 @@ const getApiData = () => {
             throw new Error("NETWORK RESPONSE ERROR");
         }
     }).then(parkData => {
-        // console.log(parkData);
         displayPark(parkData);
     }).catch((error) => console.error("FETCH ERROR:", error));
 }
 
 const displayPark = (parkData) => {
-    // console.log(parkData);
     const cardsContainer = document.querySelector(".cards-container");
     parkData.data.forEach(park => {
-        // console.log(park);
-        const {activities, description, images, name, latLong, url} = park;
+        const {activities, description, images, name, latitude, longitude, url} = park;
+        console.dir(park);
         const cardBody = document.createElement("article");
         const parkName = document.createElement("h2");
         const parkDescription = document.createElement("p");
@@ -30,7 +28,7 @@ const displayPark = (parkData) => {
         
         parkName.innerHTML = name;
         parkDescription.innerHTML = description;
-        coordinates.innerHTML = "Park Coordinates " + latLong;
+        coordinates.innerHTML = "Park Coordinates: " + latitude + " N, " + longitude + " W";
         activitiesDiv.innerHTML = "Activities at this park include:";
         parkLink.innerHTML = "Park Website";
 
@@ -43,9 +41,9 @@ const displayPark = (parkData) => {
         coordinates.classList.add("park-coordinates");
         parkLink.classList.add("park-links");
         activities.forEach((activity, i) => {
-            if (i<=2) {const p = document.createElement("li");
-                p.innerHTML = activity.name;
-                activitiesDiv.appendChild(p);}
+            if (i<=2) {const li = document.createElement("li");
+                li.innerHTML = activity.name;
+                activitiesDiv.appendChild(li);}
         });
 
         cardBody.appendChild(parkName);

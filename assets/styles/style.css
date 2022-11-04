@@ -4,7 +4,7 @@ header {
   justify-content: center;
 }
 
-#header-image {
+.header-image {
   max-height: 8rem;
   margin-top: 1rem;
   position: relative;
@@ -39,13 +39,14 @@ section {
   justify-content: space-around;
 }
 
-#page-title {
+.page-title {
   color: #fff;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
   font-size: 4rem;
   font-family: "Heebo", sans-serif;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
 section {
@@ -141,7 +142,7 @@ footer {
 }
 
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -150,26 +151,26 @@ a {
   text-align: center;
 }
 
-#legal-links {
+.legal-links {
   display: flex;
   text-align: center;
 }
 
-#legal-link {
+.legal-link {
   margin: 15px;
 }
 
-#social-links {
+.social-links {
   display: flex;
   width: 200px;
 }
 
-#icon {
+.icon {
   font-size: 40px;
   margin: 10px;
 }
 
-#copy {
+.copy {
   width: 100%;
   padding-left: 170px;
 }
@@ -187,7 +188,7 @@ a {
             padding-inline-start: 0px;
     flex-direction: column;
   }
-  #copy {
+  .copy {
     padding-left: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
