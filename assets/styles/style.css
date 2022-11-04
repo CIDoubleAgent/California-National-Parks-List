@@ -1,6 +1,5 @@
 header {
   background-color: transparent;
-  color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -12,6 +11,8 @@ header {
 }
 
 body {
+  padding: 0%;
+  margin: 0%;
   background-image: url("https://github.com/CIDoubleAgent/California-National-Parks-List/blob/main/assets/images/background_wildernesscolorful.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,9 +94,14 @@ h3,
 .park-coordinates,
 .activity {
   text-align: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 .park-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   color: rgb(0, 118, 126);
@@ -174,7 +180,6 @@ a {
     flex-direction: column;
     text-align: center;
   }
-
   #legal-links,
 #social-links {
     width: 100%;
@@ -182,12 +187,7 @@ a {
             padding-inline-start: 0px;
     flex-direction: column;
   }
-
   #copy {
     padding-left: 0px;
   }
-}
-body {
-  padding: 0%;
-  margin: 0%;
 }/*# sourceMappingURL=style.css.map */

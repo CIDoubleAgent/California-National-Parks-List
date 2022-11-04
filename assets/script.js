@@ -25,12 +25,12 @@ const displayPark = (parkData) => {
         const parkImage = document.createElement("img");
         const coordinatesTitle = document.createElement("h3");
         const coordinates = document.createElement("p");
-        const activitiesDiv = document.createElement("div");
+        const activitiesDiv = document.createElement("ul");
         const parkLink = document.createElement("a");
         
         parkName.innerHTML = name;
         parkDescription.innerHTML = description;
-        coordinates.innerHTML = latLong;
+        coordinates.innerHTML = "Park Coordinates " + latLong;
         activitiesDiv.innerHTML = "Activities at this park include:";
         parkLink.innerHTML = "Park Website";
 
@@ -43,7 +43,7 @@ const displayPark = (parkData) => {
         coordinates.classList.add("park-coordinates");
         parkLink.classList.add("park-links");
         activities.forEach((activity, i) => {
-            if (i<=2) {const p = document.createElement("p");
+            if (i<=2) {const p = document.createElement("li");
                 p.innerHTML = activity.name;
                 activitiesDiv.appendChild(p);}
         });
