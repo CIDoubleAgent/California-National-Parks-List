@@ -17,10 +17,19 @@
     padding-left: 30px;
     border-radius: 5px;
     font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardBody p {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    height: 60px;
 }
 
 .park-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
 }
@@ -36,12 +45,10 @@ h3,
 
 .park-links {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-self: center;
     text-decoration:none;
     font-size: 1.125rem;
     color: $linkColor;
-    
 }
 
 @media (max-width: 1322px) {

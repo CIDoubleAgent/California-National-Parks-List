@@ -28,7 +28,8 @@ const displayPark = (parkData) => {
         
         parkName.innerHTML = name;
         parkDescription.innerHTML = description;
-        coordinates.innerHTML = "Park Coordinates: " + latitude + " N, " + longitude + " W";
+        coordinatesTitle.innerHTML = "Park Coordinates:"
+        coordinates.innerHTML = latitude + " N, " + longitude + " W";
         activitiesDiv.innerHTML = "Activities at this park include:";
         parkLink.innerHTML = "Park Website";
 
