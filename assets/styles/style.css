@@ -140,9 +140,7 @@ footer {
   background-color: rgb(0, 10, 86);
   color: #fff;
   padding-left: 15px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-top: 50px;
+  padding: 2px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -155,22 +153,27 @@ a {
 }
 
 .footer-title {
-  width: 100%;
   text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem 1rem 0 1rem;
 }
 
 .legal-links {
   display: flex;
-  text-align: center;
+  flex-direction: column;
 }
 
 .legal-link {
-  margin: 15px;
+  margin: 10px 0 10px 0;
+}
+
+.copy {
+  margin: 10px 0 10px 0;
 }
 
 .social-links {
-  display: flex;
-  width: 200px;
+  width: 190px;
+  align-self: center;
 }
 
 .icon {
@@ -178,25 +181,25 @@ a {
   margin: 10px;
 }
 
-.copy {
-  width: 100%;
-  padding-left: 170px;
-}
-
-@media (max-width: 615px) {
+@media (max-width: 850px) {
   footer {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+  .footer-title {
+    margin-bottom: 15px;
+  }
   #legal-links,
 #social-links {
     width: 100%;
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
-    flex-direction: column;
+    margin: 10px 0 10px 0;
   }
-  .copy {
-    padding-left: 0px;
+  ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .footer-title {
+    order: -1;
   }
 }/*# sourceMappingURL=style.css.map */
